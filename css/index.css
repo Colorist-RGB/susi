@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: inherit; }
+ul { list-style-type: none; }
+table { border-collapse: collapse; width: 100%; }
+img { max-width: 100%; vertical-align: middle; }
+button { border: none; background: none; cursor: pointer; font-size: 100%; }
+
+#nav {
+    background: #85665c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+#nav .depth1 {
+    overflow: hidden;
+}
+#nav .depth1 li {
+    float: left;
+    width: 20%;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    background: #85665c;
+    color: #fff;
+}
+#nav .depth1 li:hover {
+    border-bottom: 2px solid #fff;
+}
+#nav .depth1 li a {
+    display: block;
+    padding: 20px 0px;
+}
+body {
+    font-size: 16px;
+    font-family:'나눔고딕'
+}
+.row {
+    max-width: 960px;
+    /* height: ; */
+    margin: 0 auto;
+}
+#header {
+    background: url(../images/header_bg.gif) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    margin-top: 61px;
+}
+.header_text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    /* margin-left: -287.5px;
+    margin-top: -129.5px; */
+}
+.header_text h1 p {
+    font-size: 48px;
+    font-family:'나눔명조';
+    padding: 20px 0;
+}
+.header_text > p {
+    font-size: 22.4px;
+}
+#section h2 {
+    font-size: 48px;
+    font-family:'나눔명조';
+    color: #85665c;
+    /* text-align: center; */
+    padding-bottom: 20px;
+}
+.article1 {
+    /* position: relative; */
+}
+.main_food {
+    position: relative;
+    text-align: center;
+    margin-top: -188px;
+}
+/* repeat가 반복해서 채워주기때문에 cover 필요없어짐 */
+#section {
+    background: url(../images/bg.jpg) repeat center;
+    position: relative;
+    /* background-size: cover; */
+}
+#section > div {
+    padding: 48px 0;
+    text-align: center;
+}
+#section > .article6 {
+    padding: 0;
+}
+.article1 ul {
+    display: table;
+    width: 100%;
+    margin-top: 110px;
+}
+.article1 ul > li {
+    display: table-cell;
+    width: 25%;
+    padding: 0 15px;
+}
+/* .article1 ul > li+li {
+    padding-left: 30px;
+} */
+.article1 h3 {
+    font-size: 25.6px;
+    font-family:'나눔명조';
+    color: #85665c;
+    padding: 50px 0 15px;
+    line-height: 1.2;
+}
+.article1 > ul > li img {
+    height: 97px;
+}
+.article2 {
+    /* text-align: center; */
+}
+/* 블록성격의 자식들을 한줄로 정렬하기 위해 floast 속성을
+사용하면 부모의 높이가 사라지는 부작용이 발생함.
+이것을 해결하기 위해 부모요소에 overlfow: hidden; 속성을 줌 */
+.article2 ul {
+    /* background: red; */
+    overflow: hidden;
+}
+.article2 ul li {
+    float: right;
+    width: 25%;
+    padding: 30px 20px;
+}
+.article3 h2 {
+    font-size: 48px;
+    font-family:'나눔명조';
+    color: #85665c;
+}
+.article3 p:nth-of-type(1) {
+
+}
+.article3 p:nth-of-type(2) {
+    font-size: 16px;
+    font-family:'나눔고딕';
+    color: #666;
+    line-height: 1.5em;
+}
+.article3 img {
+    width: 110px;
+    height: 110px;
+    margin: 30px 0 20px;
+}
+.article3 p:nth-of-type(3) {
+    font-size: 28.8px;
+    font-family:'나눔명조';
+    color: #404040;
+    padding-bottom: 20px;
+}
+.article3 p:nth-child(6) {
+    font-size: 16px;
+    font-family:'나눔고딕';
+    color: #85665c;
+}
+.article4 > table caption {
+    display: none;
+}
+.article4 table {
+    /* border: 1px solid black; */
+    line-height: 2em;
+}
+.article4 table th  {
+    text-align: left;
+    font-size: 25.6px;
+    color: #85665c;
+}
+.article4 tr > th {
+    padding-top: 20px;
+}
+.article4 table td {
+    text-align: right;
+    font-size: 22.4px;
+    color: #404040;    
+    font-weight: bold;
+}
+.article4 table .explain {
+    text-align: left;
+    color: #404040;
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #85665c;
+}
+.article4 table tr:last-child .explain {
+    border-bottom: none;
+}
+.article4 .link {
+    padding-top: 20px;
+}
+.article4 a {
+    display: inline-block;
+    padding: 23px;
+    width: 175.2px;
+    height: 64px;
+    background: #85665c;
+    border-radius: 50px;
+    color: white;
+}
+#detail {
+    display: none;
+    position: fixed;
+    /* width: 100%;
+    height: 100%; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+#detail:target {
+    display: block;
+}
+.detailcont {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    padding-bottom: 40px;
+    background: #fff;
+    color: #000;
+}
+.detailcont .close {
+    display: block;
+    width: 80px;
+    background: red;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto 0;;
+}
+.article5 {
+    overflow: hidden;
+    color: #404040;
+}
+.article5 .info {
+    float: left;
+    text-align: left;
+    width: 50%;
+    margin-top: 20px;
+}
+.article .info pre {
+    font-family: inherit;
+}
+.article5 .map {
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+}
+.article6 {
+    background: #85665c;
+    color: #f4ba82;
+    font-size: 32px;
+    font-family:'나눔명조'
+}
+.article6 img {
+    width: 100%;
+}
+.article6 a {
+    color: #fff;
+    padding-left: 20px;
+}
+.article6 div {
+    padding: 45px 0;
+}
+
+#footer {
+    background: #85665c;
+    padding: 61px 0;
+    color: #fff;
+    font-family:'나눔명조';
+    text-align: center;
+
+}
+.gotop {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+    line-height: 100px;
+}
