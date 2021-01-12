@@ -7,8 +7,8 @@ table { border-collapse: collapse; width: 100%; }
 img { max-width: 100%; vertical-align: middle; }
 button { border: none; background: none; cursor: pointer; font-size: 100%; }
 
-#ourgallery, #aboutus, #cheftmenu, #roadmap #reservation {
-    margin-top: 500px;
+#ourgallery, #aboutus, #chefmenu, #roadmap, #reservation {
+    padding-top: 120px !important;
 }
 #nav {
     background: #85665c;
